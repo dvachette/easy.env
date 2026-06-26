@@ -1,0 +1,27 @@
+{
+  "name": "easy.env",
+  "version": "1.0.0",
+  "description": "Easy.env is an easy way to parse configuration from .env file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvachette/easy.env.git"
+  },
+  "author": "Donatien Vachette",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dvachette/easy.env/issues"
+  },
+  "homepage": "https://github.com/dvachette/easy.env#readme",
+  "dependencies": {
+    "@types/dotenv": "^6.1.1",
+    "dotenv": "^17.4.2",
+    "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.1"
+  }
+}
