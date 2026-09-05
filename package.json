@@ -1,6 +1,9 @@
 {
-  "name": "easy.env",
+  "name": "@dvachette/easy.env",
   "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Easy.env is a tiny, type-safe way to read required or optional values from process.env",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
