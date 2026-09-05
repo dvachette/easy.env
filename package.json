@@ -1,10 +1,24 @@
 {
   "name": "easy.env",
   "version": "1.0.0",
-  "description": "Easy.env is an easy way to parse configuration from .env file",
-  "main": "index.js",
+  "description": "Easy.env is a tiny, type-safe way to read required or optional values from process.env",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tsx tests/test.ts",
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -16,12 +30,17 @@
     "url": "https://github.com/dvachette/easy.env/issues"
   },
   "homepage": "https://github.com/dvachette/easy.env#readme",
-  "dependencies": {
-    "@types/dotenv": "^6.1.1",
-    "dotenv": "^17.4.2",
-    "typescript": "^6.0.3"
-  },
+  "keywords": [
+    "env",
+    "environment",
+    "process.env",
+    "config",
+    "typescript"
+  ],
   "devDependencies": {
-    "@types/node": "^26.0.1"
+    "typescript": "^6.0.3",
+    "@types/node": "^26.4.1",
+    "tsx": "^4.23.13",
+    "tsup": "^8.5.1"
   }
 }

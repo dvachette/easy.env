@@ -1,7 +1,7 @@
 import { inspect } from "util";
 import { required, optional } from "../src";
 import { config } from "dotenv";
-config()
+config({ path: '.env.test' })
 const myConfig = {
     value: required("VALUE"),
     heyo: optional("HEYO"),
